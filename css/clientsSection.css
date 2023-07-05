@@ -1,0 +1,195 @@
+  .clients {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+      .clients-table__wrapper{
+        margin-bottom: 40px;
+      }
+
+  .clients__title {
+    margin-bottom: 26px;
+    color: var( --color-black3);
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .clients__table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  /* .clients-table__thead-tr {
+    display: flex;
+  } */
+
+  .clients-table__th {
+    padding-left: 20px;
+    padding-bottom: 8px;
+    color: var(--color-silver-chalice);
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 12px;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+    user-select: none;
+  }
+
+
+
+  .clients-table__th[data-type='id'] {
+    /* padding-right: 45px; */
+    width: calc(80 / 1186 * 100%);
+  }
+
+  .clients-table__th[data-type='surname'] {
+    /* padding-right: 198px; */
+    width: calc(380 / 1186 * 100%);
+  }
+
+  .clients-table__th[data-type='createdAt'] {
+    /* padding-right: 10px; */
+    /* min-width: 173px; */
+    width: calc(173 / 1186 * 100%);
+  }
+
+  .clients-table__th[data-type='updatedAt'] {
+    /* padding-right: 10px; */
+    /* min-width: 186px; */
+    width: calc(186 / 1186 * 100%);
+  }
+
+   .clients-table__th-contacts {
+   /* padding-right: 70px; */
+    width: 155px;
+   /* width: calc(142 / 1186 * 100%); */
+  }
+
+  .clients-table__th-actions {
+    width: 212px;
+  }
+
+  .table__th-text {
+    display: inline-block;
+    margin-right: 2px;
+    transition: color .3s ease-in-out;
+  }
+
+  .table__th-text-sort {
+    padding-left: 2px;
+    color: var(--color-heliotrope);
+    font-size: 10px;
+  }
+
+  .th-icon {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .clients-table__th-sort.sort-up .th-icon {
+    background-image: url('../img/arrow-up.svg');
+  }
+
+  .clients-table__th-sort.sort-down .th-icon {
+    background-image: url('../img/arrow-down.svg');
+  }
+
+  .th-icon,
+  .table__th-text-sort {
+    opacity: .7;
+    transition: opacity .3s ease-in-out;
+  }
+
+  .clients-table__th-contacts,
+  .clients-table__th-actions {
+    cursor: auto;
+  }
+
+  .table__th-hover:hover .table__th-text {
+    color: var(--color-black3);
+  }
+
+  .table__th-hover:hover .th-icon,
+  .table__th-hover:hover .table__th-text-sort {
+    opacity: 1;
+  }
+
+  .human-icon {
+    margin-right: 10px;
+  }
+
+  .clients__add-btn {
+    display: flex;
+    margin: 0 auto;
+    padding: 12px 26px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #9873FF;
+    border: 1px solid #9873FF;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .clients__add-btn:hover {
+    background-color: #B89EFF;
+    color: #FFFFFF;
+  }
+
+  .clients-table__th-sort-text--active .table__th-text {
+    opacity: 1;
+    color: var(--color-electric-violet);
+    transition: none;
+  }
+
+  .clients-table__th-sort--active .th-icon {
+    transform: rotate(180deg);
+  }
+
+  .clients-table__tbody {
+    position: relative;
+    background: var(--color-white);
+  }
+
+  @media (max-width: 1024px) {
+    .clients-table__th[data-type='surname'] {
+      width: 231px;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .clients-table__th[data-type='id'] {
+      width: 63px;
+    }
+
+  .clients-table__th[data-type='surname'] {
+    width: 202px;
+  }
+
+  .clients-table__th[data-type='createdAt'] {
+    width: 102px;
+  }
+
+  .clients-table__th[data-type='updatedAt'] {
+    width: 100px;
+  }
+
+   .clients-table__th-actions {
+    width: 107px;
+  }
+
+  }
+
+  @media (max-width: 768px) {
+    .clients-table__wrapper{
+      min-height: 370px;
+      overflow-x: auto;
+    }
+  }
+
+

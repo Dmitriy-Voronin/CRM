@@ -1,0 +1,63 @@
+.header__inner {
+  position: relative;
+  width: 100%;
+}
+
+.find-list {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  padding: 15px;
+  width: 100%;
+  max-width: 581px;
+  border-radius: 0 0 10px 10px;
+  z-index: 5;
+  background-color: var(--color-white);
+  box-shadow: 0 0 35px rgba(0, 0, 0, .15);
+}
+
+.find-list__item {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.find-list__item:not(:last-child) {
+  /* border-bottom: 1px solid var(--color-gray-suit); */
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.find-list__item:hover {
+  background-color: var(--color-electric-violet);
+  color: var(--color-white);
+}
+
+.find-list__item:hover .find-list__item--mark {
+  color: var(--color-white);
+}
+
+.hide {
+  display: none;
+}
+
+.find-list__item--mark {
+  color: var(--color-electric-violet);
+  font-weight: bold;
+  transition: color .2s ease-in-out;
+}
+
+.autocomplete-active {
+  background-color: var(--color-electric-violet);
+  color: var(--color-white);
+}
+
+.autocomplete-active .find-list__item--mark {
+  color: var(--color-white);
+}
+
+.row-active {
+  background-color: var(--color-mischka);
+}
